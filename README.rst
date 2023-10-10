@@ -689,6 +689,28 @@ the Google homepage. Scripts can cause additional network requests to be
 performed, as well as modify the page or its layout, causing another round of
 page rendering and painting.
 
+Certainly! Here's the information in Markdown format, including a question, a short answer, and the detailed schema with explanations:
+
+Sending an HTTP request through the SOCKS5 protocol
+---------------------------------------------------
+
+When sending an HTTP request through the SOCKS5 protocol, several steps occur to 
+facilitate communication between the client and the destination web server. Here's a visual representation:
+
+**HTTP Request via SOCKS5 Protocol**
+
+![alt visual_representation](https://gcdnb.pbrd.co/images/PKIjAvEvA8uG.png)
+
+**Explanation:**
+   1. **Client Configuration**: The client configures its settings to use a SOCKS5 proxy server by specifying the proxy server's IP address and port.
+   2. **Proxy Authentication (Optional)**: If required, the client provides authentication credentials (username and password) to the SOCKS5 proxy server.
+   3. **Client-to-Proxy Connection**: The client establishes a connection to the SOCKS5 proxy server, acting as the entry point for the HTTP request.
+   4. **Proxy-to-Server Connection**: The SOCKS5 proxy server initiates a connection to the destination web server and forwards the HTTP request.
+   5. **Data Relay (Encrypted)**: Data is relayed between the client and the web server via the SOCKS5 proxy server. Encryption is often used to secure the data in transit.
+   6. **Web Server Processing**: The destination web server processes the HTTP request and generates a response.
+   7. **Server-to-Proxy Relay**: The response from the web server is relayed back through the SOCKS5 proxy server to the client.
+   8. **Client Processing**: The client processes the received response, which may involve rendering web pages or handling data as per the HTTP request.
+
 .. _`Creative Commons Zero`: https://creativecommons.org/publicdomain/zero/1.0/
 .. _`"CSS lexical and syntax grammar"`: http://www.w3.org/TR/CSS2/grammar.html
 .. _`Punycode`: https://en.wikipedia.org/wiki/Punycode
@@ -709,3 +731,4 @@ page rendering and painting.
 .. _`downgrade attack`: http://en.wikipedia.org/wiki/SSL_stripping
 .. _`OSI Model`: https://en.wikipedia.org/wiki/OSI_model
 .. _`Spanish`: https://github.com/gonzaleztroyano/what-happens-when-ES
+.. _`SOCKS Protocol Version 5 (SOCKS5)`: https://tools.ietf.org/html/rfc1928
